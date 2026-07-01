@@ -1,0 +1,122 @@
+{
+  "generated_at": "2026-07-01T22:52:43.844782",
+  "package": "outputs_fdot_integrated_risk_v2_1",
+  "package_version": "integrated_risk_v2_1",
+  "source_authority": "Florida Department of Transportation (FDOT)",
+  "historical_reference": {
+    "file": "historical-item-averages-2024.xlsx",
+    "description": "FDOT Historical Item Averages, 2024 statewide weighted average unit costs",
+    "note": "Look-ahead-safe reference (prior to 2025 lettings). Public FDOT bid-average report.",
+    "frozen_copy": "data/sources/historical-item-averages-2024.xlsx"
+  },
+  "role_legend": [
+    "primary case study (FDOT bid tab)",
+    "sensitivity case study (FDOT bid tab)",
+    "historical benchmark",
+    "model output",
+    "FDOT item dictionary (reference)",
+    "dashboard/API source (generated output)"
+  ],
+  "sources": [
+    {
+      "source_name": "FDOT contract T5850 bid tabulation",
+      "role": "primary case study (FDOT bid tab)",
+      "description": "7 bidders, roadway milling & resurfacing",
+      "file": "1T5850-Bid-Tab.pdf",
+      "path": "Case study US/1T5850-Bid-Tab.pdf",
+      "sha256": "eef42c9c936757c1b59b9ad76f4f3a875eab125a26d7085a62f689e2c7912570",
+      "exists": true,
+      "size_bytes": 425128
+    },
+    {
+      "source_name": "FDOT contract T6603 bid tabulation",
+      "role": "primary case study (FDOT bid tab)",
+      "description": "4 bidders, highway resurfacing",
+      "file": "2T6603-Bid-Tab.pdf",
+      "path": "Case study US/2T6603-Bid-Tab.pdf",
+      "sha256": "24cd02d0d67807670e81b5e8b83d37588baa977339c8ed5a9c6b9b8f2fb86f37",
+      "exists": true,
+      "size_bytes": 353493
+    },
+    {
+      "source_name": "FDOT contract T1900 bid tabulation",
+      "role": "primary case study (FDOT bid tab)",
+      "description": "4 bidders, traffic signals & roadway",
+      "file": "4T1900-Bid-Tab(1).pdf",
+      "path": "Case study US/4T1900-Bid-Tab(1).pdf",
+      "sha256": "7425e6e9328c72a52a8f2d8ab70f2abc50e78d2552da0c0e06e6666457a980ff",
+      "exists": true,
+      "size_bytes": 231372
+    },
+    {
+      "source_name": "FDOT contract E7Q32 bid tabulation",
+      "role": "sensitivity case study (FDOT bid tab)",
+      "description": "2 bidders \u2014 sensitivity only, not a main validation case",
+      "file": "4E7Q32BidTabs(1).pdf",
+      "path": "Case study US/4E7Q32BidTabs(1).pdf",
+      "sha256": "c95f6042cc112d214dad68c0abb862fadfdb2d6a7f6f934e5226e4da575b4672",
+      "exists": true,
+      "size_bytes": 25473
+    },
+    {
+      "source_name": "FDOT contract T4711 bid tabulation",
+      "role": "primary case study (FDOT bid tab)",
+      "description": "4 bidders, bridge project ($43M) \u2014 added via parser v2",
+      "file": "3T4711-Bid-Tab.pdf",
+      "path": "Case study US/3T4711-Bid-Tab.pdf",
+      "sha256": "9a4d6af322dbc792116904d0ed21326b0d503b2cebf9313bc7cf8122b36dd610",
+      "exists": true,
+      "size_bytes": 457082
+    },
+    {
+      "source_name": "FDOT contract E7U28 bid tabulation",
+      "role": "primary case study (FDOT bid tab)",
+      "description": "7 bidders, maintenance contract \u2014 added via parser v2",
+      "file": "5E7U28BidTabs.pdf",
+      "path": "Case study US/5E7U28BidTabs.pdf",
+      "sha256": "14aa199a66878b5554d35a82a5bcfce12e44033955ebbe7d67e6e156138f7e4a",
+      "exists": true,
+      "size_bytes": 62552
+    },
+    {
+      "source_name": "FDOT Historical Item Averages 2024 (statewide weighted average unit costs)",
+      "role": "historical benchmark",
+      "description": "External official benchmark H; window 2024/01/01-2024/12/31; look-ahead-safe vs 2025 lettings; frozen at data/sources/",
+      "file": "historical-item-averages-2024.xlsx",
+      "path": "Case study US/historical-item-averages-2024.xlsx",
+      "sha256": "9725c7042dacb60995d2b38a04db2efa6bb9128155171c18032644a9f1a8d135",
+      "exists": true,
+      "size_bytes": 128248
+    },
+    {
+      "source_name": "DDC ML unit-price predictions (risk_ready)",
+      "role": "model output",
+      "description": "Supporting ML benchmark B (DDC surrogate); ~0% strong matches for FDOT roadway items -> supporting only",
+      "file": "risk_ready_predictions.parquet",
+      "path": "outputs_modeling_v1_1/predictions/risk_ready_predictions.parquet",
+      "sha256": "1c0f0657162260b32845df3d4e6d05bf1d21f5c91669e629fbeb6c115dd02771",
+      "exists": true,
+      "size_bytes": 3410443
+    },
+    {
+      "source_name": "FDOT pay item master list",
+      "role": "FDOT item dictionary (reference)",
+      "description": "Item number -> description/unit reference; not required for risk computation",
+      "file": "Bid-Item-List.xlsx",
+      "path": "Case study US/Bid-Item-List.xlsx",
+      "sha256": "dd369beaf8ad7c156c69ef0026c1858104a4567689c3b7cf7c769a0259dedab4",
+      "exists": true,
+      "size_bytes": 103606
+    },
+    {
+      "source_name": "Integrated dashboard-ready dataset (generated)",
+      "role": "dashboard/API source (generated output)",
+      "description": "Self-contained input for the Streamlit dashboard and API",
+      "file": "integrated_dashboard_ready.parquet",
+      "path": "outputs_fdot_integrated_risk_v2_1\\data\\integrated_dashboard_ready.parquet",
+      "sha256": "f45aa5ce44ee11c8f7f7978b94f3fb40aae17729de4f13fdecdcac76e77ff5f4",
+      "exists": true,
+      "size_bytes": 70543
+    }
+  ]
+}

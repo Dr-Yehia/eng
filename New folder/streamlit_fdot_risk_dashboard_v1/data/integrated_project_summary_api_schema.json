@@ -1,0 +1,77 @@
+{
+  "endpoint": "integrated_project_summary",
+  "version": "v2.1.1",
+  "fields": {
+    "case_id": {
+      "type": "string",
+      "nullable": false,
+      "example": "T5850"
+    },
+    "case_role": {
+      "type": "string",
+      "allowed_values": [
+        "main_validation",
+        "sensitivity"
+      ],
+      "nullable": false,
+      "example": "main_validation"
+    },
+    "bidder_count": {
+      "type": "integer",
+      "nullable": false,
+      "example": 7
+    },
+    "bidder_count_confidence": {
+      "type": "string",
+      "allowed_values": [
+        "high",
+        "medium",
+        "low"
+      ],
+      "nullable": false,
+      "example": "high"
+    },
+    "items": {
+      "type": "integer",
+      "nullable": false,
+      "example": 135
+    },
+    "winning_total_bid": {
+      "type": "number",
+      "nullable": false,
+      "example": 7139022.43
+    },
+    "historical_coverage": {
+      "type": "number",
+      "description": "% items with FDOT historical match",
+      "nullable": false,
+      "example": 97.78
+    },
+    "confirmed_by_both": {
+      "type": "integer",
+      "description": "high-confidence risk items",
+      "nullable": false,
+      "example": 38
+    },
+    "market_overpricing_exposure": {
+      "type": "number",
+      "nullable": false,
+      "example": 521681.9
+    },
+    "historical_overpricing_exposure": {
+      "type": "number",
+      "nullable": false,
+      "example": 718981.1
+    },
+    "critical": {
+      "type": "integer",
+      "nullable": false,
+      "example": 46
+    },
+    "high": {
+      "type": "integer",
+      "nullable": false,
+      "example": 37
+    }
+  }
+}

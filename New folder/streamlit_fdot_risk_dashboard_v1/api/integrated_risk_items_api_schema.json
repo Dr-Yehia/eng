@@ -1,0 +1,303 @@
+{
+  "endpoint": "integrated_risk_items",
+  "row_unit": "one FDOT pay item (validated cases only)",
+  "version": "v2.1.1",
+  "fields": {
+    "case_id": {
+      "type": "string",
+      "description": "FDOT contract/case id",
+      "nullable": false,
+      "allowed_values": null,
+      "example": "T5850"
+    },
+    "case_role": {
+      "type": "string",
+      "description": "validation role of the case",
+      "nullable": false,
+      "allowed_values": [
+        "main_validation",
+        "sensitivity"
+      ],
+      "example": "main_validation"
+    },
+    "bidder_count": {
+      "type": "integer",
+      "description": "number of responsive bidders",
+      "nullable": false,
+      "allowed_values": null,
+      "example": 7
+    },
+    "bidder_count_confidence": {
+      "type": "string",
+      "description": "confidence in bidder-market benchmark from n bidders",
+      "nullable": false,
+      "allowed_values": [
+        "high",
+        "medium",
+        "low"
+      ],
+      "example": "high"
+    },
+    "contract_id": {
+      "type": "string",
+      "description": "FDOT contract id",
+      "nullable": true,
+      "allowed_values": null,
+      "example": "T5850"
+    },
+    "district": {
+      "type": "string",
+      "description": "FDOT district",
+      "nullable": true,
+      "allowed_values": null,
+      "example": "District 5"
+    },
+    "letting_date": {
+      "type": "string",
+      "description": "bid letting date (YYYY-MM-DD)",
+      "nullable": true,
+      "allowed_values": null,
+      "example": "2025-04-30"
+    },
+    "winner": {
+      "type": "string",
+      "description": "winning bidder name",
+      "nullable": true,
+      "allowed_values": null,
+      "example": "V.A. PAVING, INC."
+    },
+    "winning_total_bid": {
+      "type": "number",
+      "description": "winning bid total (USD)",
+      "nullable": false,
+      "allowed_values": null,
+      "example": 7139022.43
+    },
+    "line_no": {
+      "type": "string",
+      "description": "bid line number",
+      "nullable": false,
+      "allowed_values": null,
+      "example": "0130"
+    },
+    "item_id": {
+      "type": "string",
+      "description": "FDOT pay item number",
+      "nullable": false,
+      "allowed_values": null,
+      "example": "0327 70 2"
+    },
+    "description": {
+      "type": "string",
+      "description": "item description",
+      "nullable": false,
+      "allowed_values": null,
+      "example": "MILLING EXISTING ASPHALT PAVEMENT"
+    },
+    "section_name": {
+      "type": "string",
+      "description": "project section",
+      "nullable": true,
+      "allowed_values": null,
+      "example": "Roadway"
+    },
+    "unit": {
+      "type": "string",
+      "description": "unit of measure",
+      "nullable": false,
+      "allowed_values": null,
+      "example": "SY"
+    },
+    "quantity": {
+      "type": "number",
+      "description": "bid quantity",
+      "nullable": false,
+      "allowed_values": null,
+      "example": 64672.0
+    },
+    "is_lump_sum": {
+      "type": "boolean",
+      "description": "lump-sum item flag",
+      "nullable": false,
+      "allowed_values": [
+        true,
+        false
+      ],
+      "example": false
+    },
+    "risk_basis": {
+      "type": "string",
+      "description": "unit_rate or lump_sum",
+      "nullable": false,
+      "allowed_values": [
+        "unit_rate",
+        "lump_sum"
+      ],
+      "example": "unit_rate"
+    },
+    "winner_unit_price": {
+      "type": "number",
+      "description": "winning bidder unit price (USD)",
+      "nullable": false,
+      "allowed_values": null,
+      "example": 4.65
+    },
+    "market_benchmark_unit_price": {
+      "type": "number",
+      "description": "non-winner median unit price (USD)",
+      "nullable": true,
+      "allowed_values": null,
+      "example": 3.6
+    },
+    "deviation_vs_market": {
+      "type": "number",
+      "description": "% deviation vs contractor market benchmark",
+      "nullable": true,
+      "allowed_values": null,
+      "example": 29.2
+    },
+    "market_overpricing_exposure": {
+      "type": "number",
+      "description": "max(winner-market,0)*qty (USD)",
+      "nullable": false,
+      "allowed_values": null,
+      "example": 67905.6
+    },
+    "historical_benchmark_unit_price": {
+      "type": "number",
+      "description": "FDOT 2024 weighted avg unit price (USD)",
+      "nullable": true,
+      "allowed_values": null,
+      "example": 3.8
+    },
+    "deviation_vs_historical": {
+      "type": "number",
+      "description": "% deviation vs FDOT historical",
+      "nullable": true,
+      "allowed_values": null,
+      "example": 22.4
+    },
+    "historical_overpricing_exposure": {
+      "type": "number",
+      "description": "max(winner-historical,0)*qty (USD)",
+      "nullable": false,
+      "allowed_values": null,
+      "example": 54000.0
+    },
+    "historical_match_status": {
+      "type": "string",
+      "description": "FDOT historical match status",
+      "nullable": false,
+      "allowed_values": [
+        "matched",
+        "unit_mismatch",
+        "no_match"
+      ],
+      "example": "matched"
+    },
+    "ml_match_status": {
+      "type": "string",
+      "description": "ML supporting match status",
+      "nullable": false,
+      "allowed_values": [
+        "strong",
+        "candidate_review",
+        "no_match"
+      ],
+      "example": "no_match"
+    },
+    "ml_match_score": {
+      "type": "number",
+      "description": "ML text-match cosine score 0..1",
+      "nullable": true,
+      "allowed_values": null,
+      "example": 0.42
+    },
+    "market_risk_flag": {
+      "type": "string",
+      "description": "risk level vs market benchmark",
+      "nullable": false,
+      "allowed_values": [
+        "Normal",
+        "Watch",
+        "Moderate",
+        "High",
+        "Critical",
+        "Not available"
+      ],
+      "example": "High"
+    },
+    "historical_risk_flag": {
+      "type": "string",
+      "description": "risk level vs historical benchmark",
+      "nullable": false,
+      "allowed_values": [
+        "Normal",
+        "Watch",
+        "Moderate",
+        "High",
+        "Critical",
+        "Not available"
+      ],
+      "example": "High"
+    },
+    "combined_risk_flag": {
+      "type": "string",
+      "description": "final combined risk level",
+      "nullable": false,
+      "allowed_values": [
+        "Normal",
+        "Watch",
+        "Moderate",
+        "High",
+        "Critical",
+        "Not available"
+      ],
+      "example": "High"
+    },
+    "risk_direction": {
+      "type": "string",
+      "description": "direction of the flagged deviation",
+      "nullable": false,
+      "allowed_values": [
+        "overpricing",
+        "underpricing",
+        "mixed",
+        "n/a"
+      ],
+      "example": "overpricing"
+    },
+    "evidence_class": {
+      "type": "string",
+      "description": "which benchmarks corroborate",
+      "nullable": false,
+      "allowed_values": [
+        "confirmed_by_both",
+        "historical_only",
+        "market_only",
+        "low_evidence",
+        "no_benchmark"
+      ],
+      "example": "confirmed_by_both"
+    },
+    "risk_confidence": {
+      "type": "string",
+      "description": "confidence in the flag",
+      "nullable": false,
+      "allowed_values": [
+        "High",
+        "Medium",
+        "Low"
+      ],
+      "example": "High"
+    },
+    "recommended_action": {
+      "type": "string",
+      "description": "suggested commercial-review action",
+      "nullable": false,
+      "allowed_values": null,
+      "example": "Request rate breakdown / commercial review (overpricing)"
+    }
+  },
+  "notes": "Dual-benchmark abnormal pricing risk (contractor market + FDOT historical 2024). ML supporting only. Not fraud."
+}

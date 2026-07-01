@@ -1,0 +1,94 @@
+{
+  "projects": [
+    {
+      "case_id": "E7Q32",
+      "case_role": "sensitivity",
+      "bidder_count": 2,
+      "bidder_count_confidence": "low",
+      "items": 22,
+      "winning_total_bid": 1728143.0,
+      "historical_coverage": 95.45454545454545,
+      "confirmed_by_both": 13,
+      "market_overpricing_exposure": 350074.54,
+      "historical_overpricing_exposure": 771218.3700000001,
+      "critical": 18,
+      "high": 1
+    },
+    {
+      "case_id": "E7U28",
+      "case_role": "main_validation",
+      "bidder_count": 7,
+      "bidder_count_confidence": "high",
+      "items": 42,
+      "winning_total_bid": 427425.0,
+      "historical_coverage": 28.57142857142857,
+      "confirmed_by_both": 8,
+      "market_overpricing_exposure": 128637.5,
+      "historical_overpricing_exposure": 6003.5,
+      "critical": 29,
+      "high": 8
+    },
+    {
+      "case_id": "T1900",
+      "case_role": "main_validation",
+      "bidder_count": 4,
+      "bidder_count_confidence": "medium",
+      "items": 99,
+      "winning_total_bid": 4662926.98,
+      "historical_coverage": 94.94949494949495,
+      "confirmed_by_both": 17,
+      "market_overpricing_exposure": 277229.34654,
+      "historical_overpricing_exposure": 597061.4261899999,
+      "critical": 26,
+      "high": 15
+    },
+    {
+      "case_id": "T4711",
+      "case_role": "main_validation",
+      "bidder_count": 4,
+      "bidder_count_confidence": "medium",
+      "items": 251,
+      "winning_total_bid": 43210000.0,
+      "historical_coverage": 86.85258964143426,
+      "confirmed_by_both": 41,
+      "market_overpricing_exposure": 3507747.6875,
+      "historical_overpricing_exposure": 10135440.02218,
+      "critical": 78,
+      "high": 55
+    },
+    {
+      "case_id": "T5850",
+      "case_role": "main_validation",
+      "bidder_count": 7,
+      "bidder_count_confidence": "high",
+      "items": 135,
+      "winning_total_bid": 7139022.43,
+      "historical_coverage": 97.77777777777777,
+      "confirmed_by_both": 38,
+      "market_overpricing_exposure": 521681.9138,
+      "historical_overpricing_exposure": 718981.13895,
+      "critical": 46,
+      "high": 37
+    },
+    {
+      "case_id": "T6603",
+      "case_role": "main_validation",
+      "bidder_count": 4,
+      "bidder_count_confidence": "medium",
+      "items": 104,
+      "winning_total_bid": 6947336.62,
+      "historical_coverage": 98.07692307692307,
+      "confirmed_by_both": 37,
+      "market_overpricing_exposure": 612282.653,
+      "historical_overpricing_exposure": 1940792.2361500002,
+      "critical": 55,
+      "high": 24
+    }
+  ],
+  "primary_benchmarks": [
+    "contractor_market_non_winner_median",
+    "fdot_historical_2024_weighted_avg"
+  ],
+  "ml_role": "supporting_only",
+  "wording": "abnormal pricing risk, not fraud"
+}

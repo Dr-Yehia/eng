@@ -1,0 +1,77 @@
+{
+  "target": "log_target",
+  "target_original_scale": "normalized_unit_price",
+  "group_column_for_validation": "rate_final_name",
+  "identifier_columns": [
+    "rate_code"
+  ],
+  "numeric_features": [
+    "resource_count",
+    "material_count",
+    "machine_count",
+    "labor_count",
+    "operator_count",
+    "mass_entries",
+    "total_mass",
+    "avg_mass",
+    "electricity_kwh",
+    "total_resource_quantity",
+    "total_labor_hours_all_personnel",
+    "total_labor_hours_workers_operators",
+    "labor_hours_construction_workers",
+    "labor_hours_operators",
+    "labor_hours_engineers",
+    "count_total_people_per_unit",
+    "count_workers_per_unit",
+    "count_operators_per_unit",
+    "count_engineers_per_unit",
+    "count_people_per_day"
+  ],
+  "boolean_features": [
+    "has_material",
+    "has_machine",
+    "has_labor",
+    "missing_operator_info",
+    "missing_mass_info",
+    "missing_electricity_info",
+    "unit_manual_review",
+    "has_work_scope_text"
+  ],
+  "categorical_features": [
+    "category_type",
+    "collection_name",
+    "department_name",
+    "department_type",
+    "section_name",
+    "masterformat_division",
+    "base_unit",
+    "unit_dimension"
+  ],
+  "text_features": [
+    "rate_final_name",
+    "masterformat_section_title",
+    "subsection_name",
+    "resource_names",
+    "work_scope_text"
+  ],
+  "forbidden_leakage_columns": [
+    "total_cost_per_position",
+    "total_resource_cost",
+    "total_resource_cost_per_position",
+    "total_material_cost_per_position",
+    "total_value_machinery_equipment",
+    "total_value_abstract_resources",
+    "cost_of_working_hours",
+    "avg_resource_price",
+    "max_resource_price",
+    "min_resource_price",
+    "total_operator_cost",
+    "avg_operator_wage",
+    "electricity_cost",
+    "resource_cost",
+    "resource_price_per_unit_current",
+    "price_operator_wages",
+    "location_factor",
+    "unit_multiplier"
+  ]
+}

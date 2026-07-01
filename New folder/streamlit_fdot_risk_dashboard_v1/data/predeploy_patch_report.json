@@ -1,0 +1,13 @@
+{
+  "patch": "predeploy_cleanup",
+  "all_pass": true,
+  "checks": {
+    "api_payload_schema_match": true,
+    "display_unit_present": true,
+    "no_missing_display_unit": true,
+    "lineage_failed_not_applicable": true,
+    "failure_reason_present": true,
+    "no_pycache_in_dashboard": true,
+    "gitignore_present": true
+  }
+}

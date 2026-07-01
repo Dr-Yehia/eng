@@ -1,0 +1,15 @@
+{
+  "engine_version": "core_engine_v1",
+  "model_version": "final_xgboost_global_model (modeling_v1_1)",
+  "model_sha256_16": "7504c4c4bf3542c4",
+  "data_version": "clean_dataset_v1_1 (55,610 items) / integrated_risk_v2_1_1 (6 cases, 653 items)",
+  "index_version": "BLS frozen snapshot as of 2026-05 (Public Data API v2)",
+  "calibration_version": "dubai_regional_calibration_v1 (global factor 0.6202)",
+  "risk_threshold_version": "integrated_risk_v2 statistical thresholds (6-case: fixed% + robust-z + P75/P90/P95)",
+  "parser_version": "fdot_parser_v2",
+  "ddc_base_date": "2026-03-14 (catalog conversion date)",
+  "interval_ratio_lo": 0.790042165816251,
+  "interval_ratio_hi": 1.4094867283860704,
+  "created_at": "2026-07-01T23:15:33.628430",
+  "wording_policy": "expected benchmark unit price / abnormal pricing risk \u2014 never fair price / fraud"
+}

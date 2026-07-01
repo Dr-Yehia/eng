@@ -1,0 +1,53 @@
+{
+  "module": "integrated_risk_v2",
+  "all_pass": true,
+  "checks": {
+    "all_validated_cases_included": true,
+    "failed_cases_excluded": true,
+    "historical_coverage_reported": true,
+    "historical_uses_2024_no_lookahead": true,
+    "market_and_historical_deviations": true,
+    "agreement_metrics_calculated": true,
+    "evidence_classes_created": true,
+    "ml_supporting_only": true,
+    "ls_separated": true,
+    "api_outputs_created": true,
+    "excel_created": true,
+    "dashboard_ready_created": true,
+    "historical_coverage_below90_flagged": true
+  },
+  "coverage": {
+    "market": 100.0,
+    "historical": 88.6676875957121,
+    "ml_strong": 0.0
+  },
+  "agreement": {
+    "n_items_both_benchmarks": 579,
+    "agreement_rate_exact": 0.3143350604490501,
+    "cohen_kappa_elevated_binary": 0.3314206533904177,
+    "cohen_kappa_5level_weighted": 0.24149604006956948,
+    "spearman_deviation": 0.4665338695753818,
+    "number_confirmed_by_both": 154,
+    "number_historical_only": 143,
+    "number_market_only": 95,
+    "number_low_evidence": 261,
+    "number_no_benchmark": 0
+  },
+  "thresholds": {
+    "market": {
+      "p75": 50.36090225563909,
+      "p90": 92.80880600319966,
+      "p95": 137.53132832080195,
+      "median": -11.627906976744185,
+      "mad": 28.10811557758422
+    },
+    "historical": {
+      "p75": 72.92017629381077,
+      "p90": 145.50488758567502,
+      "p95": 265.83747927031504,
+      "median": 18.684703267896523,
+      "mad": 33.07887221672458
+    }
+  },
+  "historical_window": "Contract Type: ('CC')    Statewide"
+}
