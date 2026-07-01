@@ -1,0 +1,8 @@
+{
+  "title": "FDOT Abnormal Pricing Risk — Research Dashboard",
+  "version": "streamlit_v1_read_only",
+  "data_source_package": "outputs_fdot_integrated_risk_v2_1_1 (+ multi_case_v1_1 lineage)",
+  "benchmarks": {"primary": ["contractor market (non-winner median)", "FDOT historical 2024 weighted avg"], "supporting": "ML DDC"},
+  "wording_policy": "abnormal pricing risk / commercial review — never fraud",
+  "read_only": true
+}
