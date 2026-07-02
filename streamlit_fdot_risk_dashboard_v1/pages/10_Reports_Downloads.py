@@ -5,6 +5,7 @@ import streamlit as st
 from core.data_loader import (load_items, load_case_summary, load_methodology_md, file_bytes)
 
 st.set_page_config(page_title="Reports & Downloads", page_icon="📥", layout="wide")
+import ui_common; ui_common.apply_ui()
 st.header("📥 Reports & Downloads")
 st.caption("Everything shown here is generated upstream by validated, reproducible scripts (not computed in the dashboard).")
 

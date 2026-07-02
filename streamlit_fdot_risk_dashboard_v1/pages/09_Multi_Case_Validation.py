@@ -5,6 +5,7 @@ import pandas as pd, streamlit as st, plotly.express as px
 from core.data_loader import load_items, load_case_summary, load_lineage, RISK_ORDER, RISK_COLORS
 
 st.set_page_config(page_title="Multi-Case Validation", page_icon="🧪", layout="wide")
+import ui_common; ui_common.apply_ui()
 st.header("🧪 Multi-Case Validation")
 st.caption("Evidence that the methodology is stable across projects — not a single case.")
 items = load_items(); cs = load_case_summary(); lin = load_lineage()

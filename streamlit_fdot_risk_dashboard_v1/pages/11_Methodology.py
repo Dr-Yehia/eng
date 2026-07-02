@@ -5,6 +5,7 @@ import streamlit as st
 from core.data_loader import load_items, load_case_summary, load_methodology_md, PRIMARY_NOTE, DISCLAIMER
 
 st.set_page_config(page_title="Methodology", page_icon="📚", layout="wide")
+import ui_common; ui_common.apply_ui()
 st.header("📚 Methodology")
 st.warning(DISCLAIMER)
 items = load_items(); cs = load_case_summary()
@@ -38,12 +39,13 @@ to flag **abnormal pricing risk**. Predictions are *benchmark* unit prices, not 
 Confidence is reduced when a case has **< 3 bidders** (weak market benchmark).
 
 ### Cases
-Main validation: **T5850, T6603, T1900**. Sensitivity (2 bidders, not weighted equally): **E7Q32**.
-Excluded (different PDF layout, shown on *Data Lineage*): T4711, E7U28.
+Main validation: **T5850, T6603, T1900, T4711 (bridge), E7U28 (maintenance)**.
+Sensitivity (2 bidders, not weighted equally): **E7Q32**.
+Parser v2 extracts all six official bid tabs with grand totals matching exactly (100% parser success; see *Data Lineage*).
 
 ### Limitations (stated honestly)
 - Risk = pricing **deviation** vs benchmarks — not proof of irregularity. No ground truth → no false-alarm rate claimed.
-- Small set of FDOT highway lettings; bridge/maintenance layouts and other DOTs need parser extension and more cases.
+- Six FDOT lettings across roadway, signals, bridge and maintenance work; other DOTs/agencies still need more cases for broader generalization.
 - ML is supporting only for FDOT roadway items; the **bidder-market + FDOT-historical** benchmarks carry the analysis.
 - Wording is **abnormal pricing risk / commercial review** — never *fraud*.
 """)

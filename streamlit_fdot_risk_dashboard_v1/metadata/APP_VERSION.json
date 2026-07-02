@@ -6,6 +6,6 @@
   "read_only": true,
   "entry_point": "app.py",
   "internet_required_at_runtime": false,
-  "created_at": "2026-07-01T09:53:52.512171",
+  "created_at": "2026-07-01T22:54:09.610880",
   "note": "App code is v1 (read-only prototype); the risk DATA it displays is integrated dual-benchmark v2.1.1."
 }

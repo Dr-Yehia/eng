@@ -5,7 +5,7 @@
     "risk_calculations_unchanged": true,
     "excel_18_sheets": true,
     "sheet_15_added": true,
-    "manifest_sheet_8_sources": true,
+    "manifest_sheet_matches_json": true,
     "api_numeric_types_fixed": true,
     "e7q32_sensitivity": true,
     "ml_supporting_only": true,

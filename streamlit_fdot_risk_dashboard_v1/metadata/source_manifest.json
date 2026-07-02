@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-01T07:27:08.074992",
+  "generated_at": "2026-07-01T22:52:43.844782",
   "package": "outputs_fdot_integrated_risk_v2_1",
   "package_version": "integrated_risk_v2_1",
   "source_authority": "Florida Department of Transportation (FDOT)",
@@ -59,6 +59,26 @@
       "size_bytes": 25473
     },
     {
+      "source_name": "FDOT contract T4711 bid tabulation",
+      "role": "primary case study (FDOT bid tab)",
+      "description": "4 bidders, bridge project ($43M) \u2014 added via parser v2",
+      "file": "3T4711-Bid-Tab.pdf",
+      "path": "Case study US/3T4711-Bid-Tab.pdf",
+      "sha256": "9a4d6af322dbc792116904d0ed21326b0d503b2cebf9313bc7cf8122b36dd610",
+      "exists": true,
+      "size_bytes": 457082
+    },
+    {
+      "source_name": "FDOT contract E7U28 bid tabulation",
+      "role": "primary case study (FDOT bid tab)",
+      "description": "7 bidders, maintenance contract \u2014 added via parser v2",
+      "file": "5E7U28BidTabs.pdf",
+      "path": "Case study US/5E7U28BidTabs.pdf",
+      "sha256": "14aa199a66878b5554d35a82a5bcfce12e44033955ebbe7d67e6e156138f7e4a",
+      "exists": true,
+      "size_bytes": 62552
+    },
+    {
       "source_name": "FDOT Historical Item Averages 2024 (statewide weighted average unit costs)",
       "role": "historical benchmark",
       "description": "External official benchmark H; window 2024/01/01-2024/12/31; look-ahead-safe vs 2025 lettings; frozen at data/sources/",
@@ -94,9 +114,9 @@
       "description": "Self-contained input for the Streamlit dashboard and API",
       "file": "integrated_dashboard_ready.parquet",
       "path": "outputs_fdot_integrated_risk_v2_1\\data\\integrated_dashboard_ready.parquet",
-      "sha256": "b296445bfd562527bc86952eca41d16065a02c3a444ea681628854de4ddc7b4b",
+      "sha256": "f45aa5ce44ee11c8f7f7978b94f3fb40aae17729de4f13fdecdcac76e77ff5f4",
       "exists": true,
-      "size_bytes": 51386
+      "size_bytes": 70543
     }
   ]
 }

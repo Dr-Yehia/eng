@@ -6,6 +6,7 @@ import pandas as pd, streamlit as st
 from core_engine import assets, audit_logger as al
 
 st.set_page_config(page_title="Engine Audit", page_icon="🧾", layout="wide")
+import ui_common; ui_common.apply_ui()
 st.header("🧾 Engine & Methodology Audit")
 st.caption("Full reproducibility record: every interactive result is produced by these exact frozen components.")
 

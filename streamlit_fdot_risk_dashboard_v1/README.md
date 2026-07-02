@@ -25,7 +25,8 @@ upstream in validated, reproducible scripts; the dashboard only reads their outp
 ## Data source
 Bundled, self-contained copies of validated outputs:
 - Risk (primary): `outputs_fdot_integrated_risk_v2_1_1/` → `data/integrated_dashboard_ready.parquet`, `integrated_case_summary.parquet`.
-- Lineage (failed/excluded cases): `outputs_fdot_multi_case_validation_v1_1/` → `data/lineage_case_summary.parquet`, `bidder_summary.parquet`.
+- Lineage (all attempted cases): `outputs_fdot_multi_case_validation_v1_1/` → `data/lineage_case_summary.parquet`, `bidder_summary.parquet`.
+Six FDOT cases (roadway, signals, bridge, maintenance) — parser v2 extracts all six with exact grand-total matches.
 The dashboard shows a clear error (it does not crash) if a required file is missing.
 
 ## Run locally

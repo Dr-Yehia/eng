@@ -1,0 +1,62 @@
+[
+  {
+    "case_id": "T5850",
+    "project_type": "highway milling & resurfacing",
+    "n_bidders": 7,
+    "n_items": 135,
+    "winner": "V.A. PAVING, INC.",
+    "winning_total_bid": 7139022.43,
+    "letting_date": "2025-04-30",
+    "case_role": "main_validation"
+  },
+  {
+    "case_id": "T6603",
+    "project_type": "highway resurfacing",
+    "n_bidders": 4,
+    "n_items": 104,
+    "winner": "GENERAL ASPHALT COMPANY, LLC",
+    "winning_total_bid": 6947336.62,
+    "letting_date": "2025-04-30",
+    "case_role": "main_validation"
+  },
+  {
+    "case_id": "T1900",
+    "project_type": "traffic signals & roadway",
+    "n_bidders": 4,
+    "n_items": 99,
+    "winner": "TRAFFIC MANAGEMENT SOLUTIONS, LLC",
+    "winning_total_bid": 4662926.98,
+    "letting_date": "2025-05-28",
+    "case_role": "main_validation"
+  },
+  {
+    "case_id": "T4711",
+    "project_type": "bridge",
+    "n_bidders": 4,
+    "n_items": 251,
+    "winner": "GLF CONSTRUCTION CORPORATION",
+    "winning_total_bid": 43210000.0,
+    "letting_date": "2025-04-30",
+    "case_role": "main_validation"
+  },
+  {
+    "case_id": "E7Q32",
+    "project_type": "small bridge repair",
+    "n_bidders": 2,
+    "n_items": 22,
+    "winner": "TITAN CONSTRUCTION MANAGEMENT L",
+    "winning_total_bid": 1728143.0,
+    "letting_date": "2025-05-14",
+    "case_role": "sensitivity"
+  },
+  {
+    "case_id": "E7U28",
+    "project_type": "maintenance",
+    "n_bidders": 7,
+    "n_items": 42,
+    "winner": "MOVING EARTH INC.",
+    "winning_total_bid": 427425.0,
+    "letting_date": "2025-05-14",
+    "case_role": "main_validation"
+  }
+]

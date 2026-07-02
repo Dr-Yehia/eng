@@ -5,6 +5,7 @@ import pandas as pd, streamlit as st
 from core.data_loader import load_items, RISK_ORDER, DISCLAIMER
 
 st.set_page_config(page_title="Item-Level Risk", page_icon="⚠️", layout="wide")
+import ui_common; ui_common.apply_ui()
 st.header("⚠️ Item-Level Risk")
 st.caption("Interactive, filterable dual-benchmark risk table. Download the filtered view as CSV.")
 items = load_items()

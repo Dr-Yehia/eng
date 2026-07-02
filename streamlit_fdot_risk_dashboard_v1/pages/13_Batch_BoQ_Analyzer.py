@@ -7,6 +7,7 @@ from core_engine import prediction_engine as pe, escalation_engine as ee, risk_e
 from core_engine import matching_engine as me, audit_logger as al
 
 st.set_page_config(page_title="Batch BoQ Analyzer", page_icon="📥", layout="wide")
+import ui_common; ui_common.apply_ui()
 st.header("📥 Batch BoQ Analyzer")
 st.caption("Upload a BoQ table → each row runs through the validated engines "
            "(prediction → escalation → risk when actual price given). Max 300 rows per run.")

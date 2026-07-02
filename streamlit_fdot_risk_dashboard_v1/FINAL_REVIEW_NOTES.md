@@ -16,12 +16,13 @@ streamlit run app.py
 ## Pages
 Home (Executive Overview) · 01 Data Lineage & Validation · 02 Case Explorer · 03 Bidder Competition ·
 04 Item-Level Risk · 05 Risk Matrix · 06 Top Risk Items · 07 Benchmark Comparison ·
-08 ML Support & Limitations · 09 Multi-Case Validation · 10 Reports & Downloads.
+08 ML Support & Limitations · 09 Multi-Case Validation · 10 Reports & Downloads · 11 Methodology.
 
 ## Data shown
-- 4 validated cases, 360 pay items.
-- Cases: main validation = T5850, T6603, T1900; **sensitivity = E7Q32 (2 bidders)**.
-- Benchmarks (risk): contractor **market** (non-winner median, 100%) + **FDOT historical 2024** (~97%). **ML = supporting only (~0% strong).**
+- 6 validated cases, 653 pay items (roadway, signals, bridge, maintenance).
+- Cases: main validation = T5850, T6603, T1900, T4711 (bridge), E7U28 (maintenance); **sensitivity = E7Q32 (2 bidders)**.
+- Parser v2 extracts all six official bid tabs with grand totals matching exactly (100% parser success).
+- Benchmarks (risk): contractor **market** (non-winner median, 100%) + **FDOT historical 2024**. **ML = supporting only (~0% strong).**
 
 ## Package layout
 - `app.py`, `pages/`, `core/`, `config/`, `.streamlit/config.toml`, `requirements.txt`, `README.md`, `.gitignore`
@@ -44,8 +45,8 @@ Home (Executive Overview) · 01 Data Lineage & Validation · 02 Case Explorer ·
 
 ## Remaining limitations (stated honestly)
 - Read-only v1 (no PDF upload/login/DB — planned for v2).
-- 4 FDOT highway lettings (3 main + 1 sensitivity); bridge/maintenance layouts (T4711/E7U28) failed extraction and are EXCLUDED (shown transparently on the Data Lineage page).
-- ML supporting only for FDOT roadway items. Wording: abnormal pricing risk / commercial review — never fraud.
+- 6 FDOT lettings (5 main + 1 sensitivity) spanning roadway, signals, bridge and maintenance; other DOTs/agencies still need more cases for broader generalization.
+- ML supporting only for FDOT items. Wording: abnormal pricing risk / commercial review — never fraud.
 
 ## Verification in this package
 - `reports/validation_report_v2_1_1.md` (integrated, ALL PASS) · `reports/multi_case_validation_report.json` ·

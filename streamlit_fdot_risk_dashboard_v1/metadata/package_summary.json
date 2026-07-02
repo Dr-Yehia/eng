@@ -14,14 +14,14 @@
       "E7Q32"
     ]
   },
-  "n_items": 360,
+  "n_items": 653,
   "benchmarks": {
     "A": "contractor market (non-winner median)",
     "H": "FDOT historical 2024 weighted avg",
     "B": "ML supporting only (0% strong)"
   },
   "excel_sheets": 18,
-  "source_manifest_sources": 8,
+  "source_manifest_sources": 10,
   "ml_role": "supporting_only",
   "ml_strong_coverage_pct": 0.0
 }

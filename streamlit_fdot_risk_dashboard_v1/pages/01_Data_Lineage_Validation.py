@@ -5,6 +5,7 @@ import pandas as pd, streamlit as st
 from core.data_loader import load_lineage, DISCLAIMER
 
 st.set_page_config(page_title="Data Lineage & Validation", page_icon="🔎", layout="wide")
+import ui_common; ui_common.apply_ui()
 st.header("🔎 Data Lineage & Validation")
 st.caption("Transparency layer: every case, its source file, and its extraction/risk validation status — including EXCLUDED cases.")
 st.info(DISCLAIMER)
@@ -20,9 +21,16 @@ cols = ["case_id", "source_file", "project_type", "contract_id", "letting_date",
 cols = [c for c in cols + ["failure_reason"] if c in lin.columns]
 t = lin[cols].copy()
 
-def status(v): return "✅ PASS" if v is True else ("❌ FAIL" if v is False else "—")
-for c in ["extraction_all_pass", "included_in_combined"]:
+def status(v):
+    if v is True or (isinstance(v, str) and v.strip().lower() in ("pass", "true", "yes")):
+        return "✅ PASS"
+    if v is False or (isinstance(v, str) and v.strip().lower() in ("fail", "false", "no")):
+        return "❌ FAIL"
+    return "—"
+for c in ["extraction_all_pass", "risk_all_pass", "grand_totals_match", "included_in_combined"]:
     if c in t: t[c] = t[c].map(status)
+if "winning_total_bid" in t:
+    t["winning_total_bid"] = lin["winning_total_bid"].map(lambda x: f"${x:,.0f}" if pd.notna(x) else "—")
 if "do_not_use_for_risk" in t: t["do_not_use_for_risk"] = t["do_not_use_for_risk"].map(lambda v: "⛔ excluded" if v else "included")
 
 st.subheader("All attempted cases")

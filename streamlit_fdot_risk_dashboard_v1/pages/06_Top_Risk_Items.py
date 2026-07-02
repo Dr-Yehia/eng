@@ -5,6 +5,7 @@ import pandas as pd, streamlit as st
 from core.data_loader import load_items
 
 st.set_page_config(page_title="Top Risk Items", page_icon="🔺", layout="wide")
+import ui_common; ui_common.apply_ui()
 st.header("🔺 Top Risk Items")
 items = load_items()
 COLS = ["case_id", "item_id", "description", "display_unit", "quantity_display", "winner_unit_price",

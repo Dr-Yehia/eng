@@ -5,6 +5,7 @@ import numpy as np, pandas as pd, streamlit as st, plotly.express as px
 from core.data_loader import load_items, PRIMARY_NOTE
 
 st.set_page_config(page_title="Benchmark Comparison", page_icon="📊", layout="wide")
+import ui_common; ui_common.apply_ui()
 st.header("📊 Benchmark Comparison")
 st.caption(PRIMARY_NOTE)
 items = load_items()

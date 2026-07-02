@@ -9,6 +9,7 @@ from core_engine import calibration_engine as ce, risk_engine as rk
 from core_engine import matching_engine as me, audit_logger as al
 
 st.set_page_config(page_title="Live Estimator", page_icon="🧮", layout="wide")
+import ui_common; ui_common.apply_ui()
 st.header("🧮 Live Estimator — interactive engine")
 st.caption("Calls the SAME validated engines (model, escalation, calibration, risk thresholds). "
            "Output = **expected benchmark unit price** — never a guaranteed market/'fair' price.")

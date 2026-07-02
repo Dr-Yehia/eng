@@ -12,6 +12,6 @@
 - PASS — api_outputs_created
 - PASS — excel_created
 - PASS — dashboard_ready_created
-- PASS — historical_coverage_ge_90_main
+- PASS — historical_coverage_below90_flagged
 
 **ALL PASS = True**

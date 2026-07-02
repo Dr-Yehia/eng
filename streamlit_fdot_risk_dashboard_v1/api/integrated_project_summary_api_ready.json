@@ -15,6 +15,20 @@
       "high": 1
     },
     {
+      "case_id": "E7U28",
+      "case_role": "main_validation",
+      "bidder_count": 7,
+      "bidder_count_confidence": "high",
+      "items": 42,
+      "winning_total_bid": 427425.0,
+      "historical_coverage": 28.57142857142857,
+      "confirmed_by_both": 8,
+      "market_overpricing_exposure": 128637.5,
+      "historical_overpricing_exposure": 6003.5,
+      "critical": 29,
+      "high": 8
+    },
+    {
       "case_id": "T1900",
       "case_role": "main_validation",
       "bidder_count": 4,
@@ -27,6 +41,20 @@
       "historical_overpricing_exposure": 597061.4261899999,
       "critical": 26,
       "high": 15
+    },
+    {
+      "case_id": "T4711",
+      "case_role": "main_validation",
+      "bidder_count": 4,
+      "bidder_count_confidence": "medium",
+      "items": 251,
+      "winning_total_bid": 43210000.0,
+      "historical_coverage": 86.85258964143426,
+      "confirmed_by_both": 41,
+      "market_overpricing_exposure": 3507747.6875,
+      "historical_overpricing_exposure": 10135440.02218,
+      "critical": 78,
+      "high": 55
     },
     {
       "case_id": "T5850",

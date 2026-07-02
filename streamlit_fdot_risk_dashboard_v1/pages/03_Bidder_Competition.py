@@ -5,6 +5,7 @@ import pandas as pd, streamlit as st, plotly.express as px
 from core.data_loader import load_bidders
 
 st.set_page_config(page_title="Bidder Competition", page_icon="🏗️", layout="wide")
+import ui_common; ui_common.apply_ui()
 st.header("🏗️ Bidder Competition")
 st.caption("The real competitive market behind the primary benchmark: multiple contractors bidding the same items on the same date.")
 bidders = load_bidders()

@@ -9,6 +9,7 @@ from core.data_loader import (load_items, load_case_summary, load_lineage, load_
                               RISK_ORDER, RISK_COLORS, DISCLAIMER, PRIMARY_NOTE, kpi_cards)
 
 st.set_page_config(page_title="FDOT Pricing Risk — Research Dashboard", page_icon="🛣️", layout="wide")
+import ui_common; ui_common.apply_ui()
 items = load_items()
 cs = load_case_summary()
 lin = load_lineage()
@@ -27,7 +28,7 @@ elev = items["combined_risk_flag"].isin(["High", "Critical"]).sum()
 parser_rate = (lin["extraction_all_pass"].mean() * 100) if len(lin) and "extraction_all_pass" in lin else 100.0
 kpi_cards([
     ("Validated cases", f"{n_val}", "cases passing extraction + risk validation"),
-    ("Failed / excluded", f"{n_failed}", "different PDF layout (bridge/maintenance) — see Data Lineage page"),
+    ("Failed / excluded", f"{n_failed}", "cases that failed extraction (0 after parser v2) — see Data Lineage page"),
     ("Pay items", f"{len(items):,}", "one row per item per validated case"),
     ("Winning bid value", f"${total_bid/1e6:,.1f}M", "sum of winning bids across validated cases"),
 ])

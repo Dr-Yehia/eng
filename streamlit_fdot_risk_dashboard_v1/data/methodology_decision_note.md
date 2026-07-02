@@ -10,15 +10,15 @@ Instead, risk is evaluated with **two independent, high-coverage benchmarks**:
 ML DDC is retained **only as supporting evidence** where a strong item match exists.
 
 ## Coverage
-- Market: 100% · Historical: **97%** · ML strong: 0.0%.
+- Market: 100% · Historical: **89%** · ML strong: 0.0%.
 
 ## Agreement between the two benchmarks
-- Exact-flag agreement **34%**, elevated-binary **Cohen κ=0.36**, weighted κ=0.29, deviation **Spearman=0.56**.
-- **Confirmed-by-both (high-confidence risk): 105** · Historical-only: 87 · Market-only: 30.
+- Exact-flag agreement **31%**, elevated-binary **Cohen κ=0.33**, weighted κ=0.24, deviation **Spearman=0.47**.
+- **Confirmed-by-both (high-confidence risk): 154** · Historical-only: 143 · Market-only: 95.
 
 ## Thresholds (data-driven, not only fixed rules)
 Classification uses fixed % **and** robust z-score **and** per-benchmark P75/P90/P95 of |deviation|.
-Market P95=138% · Historical P95=275%.
+Market P95=138% · Historical P95=266%.
 
 ## Framing (honest, strengthened)
 > The ML model is the engine for the **general DDC unit-price benchmark, time escalation and regional calibration**.

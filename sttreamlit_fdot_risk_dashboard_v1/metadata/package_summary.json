@@ -1,0 +1,27 @@
+{
+  "package": "outputs_fdot_integrated_risk_v2_1_1",
+  "package_version": "integrated_risk_v2_1_1",
+  "note": "documentation/API/Excel patch only; risk calculations unchanged from v2.1",
+  "file_count_exact": 38,
+  "directories_not_counted": true,
+  "cases": {
+    "main_validation": [
+      "T5850",
+      "T6603",
+      "T1900"
+    ],
+    "sensitivity": [
+      "E7Q32"
+    ]
+  },
+  "n_items": 360,
+  "benchmarks": {
+    "A": "contractor market (non-winner median)",
+    "H": "FDOT historical 2024 weighted avg",
+    "B": "ML supporting only (0% strong)"
+  },
+  "excel_sheets": 18,
+  "source_manifest_sources": 8,
+  "ml_role": "supporting_only",
+  "ml_strong_coverage_pct": 0.0
+}
